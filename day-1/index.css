@@ -7,23 +7,23 @@ html, body {
   padding: 0;
 }
 
-.container {
-  max-width: 60%;
-  margin: 10vh auto;
+body {
   text-align: center;
   font-family: "Roboto Condensed", sans-serif; 
 }
 
-.title, .section-title {
-  text-transform: uppercase;
+.container {
+  margin: 10vh;
 }
 
 .title {
-  font-size: 4rem;
+  font-size: 4em;
   color: #174885;
+  text-transform: uppercase;
 }
 
 .section-title {
-  font-size: 3rem;
+  font-size: 3em;
   color: #3278cf;
+  text-transform: uppercase;
 }
