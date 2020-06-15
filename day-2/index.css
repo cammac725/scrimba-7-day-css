@@ -6,24 +6,23 @@ html, body {
 }
 
 .navbar {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  background-color: lightgray
+  width: 100%;
+  text-align: center;
+  background-color: lightgray;
+  text-transform: uppercase;
 }
 
 .title {
   margin-top: 0;
-  text-transform: uppercase;
+  
 }
 
 .menu {
   display: flex;
+  justify-content: center;
 }
 
 .menu-item {
   padding: 2em;
-  text-transform: uppercase;
   text-decoration: none;
 }
