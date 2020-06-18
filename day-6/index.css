@@ -69,40 +69,38 @@ body {
  */
 
 #title-section {
-  animation: fade-title .6s ease forwards;
-  /* animation-name: fade-title;
-  animation-duration: .6s;
-  animation-fill-mode: forwards; */
+  animation: fade-left 1s;
 }
 
 #hero-section {
-  animation: fade-hero .8s ease forwards;
+  animation: scale-hero 1s;
+  animation-delay: 0.5s;
+  animation-fill-mode: backwards;
 }
 
 #about-us-section {
-  animation: fade-about 1s forwards;
+  animation: fade-about 1s;
+  animation-delay: 1s;
+  animation-fill-mode: backwards;
 }
 
 #footer-section {
-  animation: fade-footer 1.2s forwards;
+  animation: fade-left 1.2s;
+  animation-delay: 1.5s;
+  animation-fill-mode: backwards;
 }
 
-@keyframes fade-title {
-  0% {width: 0%; opacity: 0;};
+@keyframes fade-left {
+  0% {width: 25%; opacity: 0;};
   100% {width: 100%; opacity: 1;};
 }
 
-@keyframes fade-hero {
-  10% {transform: scale(0); opacity: 0;}
-  100% {transform: scale(1); opacity: 1;}
+@keyframes scale-hero {
+  0% {transform: scale(0);}
+  100% {transform: scale(1);}
 }
 
 @keyframes fade-about {
-  20% {height: 0; opacity: 0;}
+  0% {height: 7vh; opacity: 0;}
   100% {height: 30vh; opacity: 1;}
-}
-
-@keyframes fade-footer {
-  30% {width: 0; opacity: 0;}
-  100% {width: 100%; opacity: 1}
 }
